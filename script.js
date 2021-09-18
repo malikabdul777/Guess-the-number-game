@@ -36,6 +36,7 @@ checkBtn.addEventListener('click', function () {
     displayMessage('🎉 Correct number');
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+    userInp.blur();
 
     if (score > highScore) {
       highScore = score;
